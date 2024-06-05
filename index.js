@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const stripe = require('stripe')(process.env.PAYMENT_SECRET);
 const cors = require('cors');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3001;
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 // Middleware
 app.use(cors());
@@ -473,7 +473,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Yoga Master Server is running!');
+    res.send('TSCZ Server is running!');
 })
 
 
